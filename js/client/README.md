@@ -1,0 +1,1 @@
+Javascript files for the client side app

@@ -1,0 +1,1 @@
+All publicly shared files go here with html pages in the root directory.

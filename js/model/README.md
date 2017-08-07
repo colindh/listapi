@@ -1,0 +1,1 @@
+Models shared between server and client go here.
