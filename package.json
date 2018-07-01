@@ -1,29 +1,42 @@
 {
-  "name": "todolist",
+  "name": "starterproject",
   "version": "1.0.0",
-  "description": "Simple todo list.",
-  "repository": "https://github.com/colindh/listapi",
+  "description": "This is a new project",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "npm run lint && jest --verbose",
+    "lint": "node_modules/eslint/bin/eslint.js --ext .js --ext .jsx js/",
+    "sass": "node-sass styles/appStyles.scss -o public/css/app.css",
+    "sass-watch": "node-sass --watch styles/appStyles.scss -o public/css/app.css"
+  },
   "dependencies": {
-    "express": "^4.13.2"
+    "express": "^4.16.3",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
-    "angular2": "^2.0.0-beta.21",
-    "bootstrap": "^3.3.7",
-    "es6-shim": "^0.35.3",
-    "express": "^4.15.2",
-    "jasmine": "^2.5.3",
-    "jshint": "~2.9.2",
-    "rxjs": "^5.0.0-beta.6",
-    "zone.js": "^0.6.26"
+    "bootstrap": "^4.1.1",
+    "eslint": "^5.0.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no tests created\" && exit 1",
-    "start": "node server.js",
-    "lint": "jshint"
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "js/client",
+      "js/model",
+      "js/server"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 60,
+        "functions": 80,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   },
   "author": "Colin Hume",
-  "license": "Apache-2.0",
+  "license": "ALv2",
+  "bugs": "https://github.com/colindh/nodejs_starter/issues",
   "keywords": [
     "web",
     "server"

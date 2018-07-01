@@ -1,0 +1,12 @@
+/**
+ * All compiled styles for the app
+**/
+
+// Import variables to override vender variables
+@import "overrides/_bootstrapVariables";
+
+// Import vender styles first so app styles override them
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/font-awesome/scss/font-awesome"
+
+// Now import app styles
