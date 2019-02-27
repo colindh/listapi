@@ -1,7 +1,7 @@
 {
-  "name": "starterproject",
+  "name": "listapi",
   "version": "1.0.0",
-  "description": "This is a new project",
+  "description": "An api and web interface for a todo list",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -36,7 +36,13 @@
   },
   "author": "Colin Hume",
   "license": "ALv2",
-  "bugs": "https://github.com/colindh/nodejs_starter/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colindh/listapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/colindh/listapi/issues",
+  },
   "keywords": [
     "web",
     "server"
